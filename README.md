@@ -38,5 +38,3 @@ Interface web moderna para o sistema de gestão de estoque, orçamento e vendas 
 - Design responsivo
 - Fontes Google (Inter)
 - Tema dark mode
-
-- ([acesse nosso site aqui](http://127.0.0.1:5500/code/index.html))
