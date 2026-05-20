@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor Inteligente — Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <strong>Menu de Navegação</strong>
+            <span>Acesse qualquer área rápido.</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="sidebar-link">Início</a>
+            <a href="products.html" class="sidebar-link">Cadastrar Produtos</a>
+            <a href="budget.html" class="sidebar-link">Orçamento</a>
+            <a href="stock.html" class="sidebar-link active">Estoque</a>
+            <a href="ai.html" class="sidebar-link">Assistente IA</a>
+        </nav>
+    </aside>
+
+    <div data-page="stock" class="container">
+        <header class="header">
+            <h1 class="title">Gestor Inteligente</h1>
+            <p class="subtitle">Gerencie produtos e estoque.</p>
+        </header>
+
+        <main class="main-content">
+            <section class="section">
+                <div class="screen-header">
+                    <h2 class="section-title">📦 Estoque</h2>
+                    <a href="index.html" class="btn-secondary btn-small">Voltar</a>
+                </div>
+                <div class="management-actions">
+                    <a href="products.html" class="btn-primary">Cadastrar Produto</a>
+                    <button type="button" class="btn-secondary" id="refresh-products-btn">Atualizar Lista</button>
+                </div>
+                <div id="product-management-content" class="product-management-content">
+                    <p class="empty-message">Nenhum produto cadastrado. Use o cadastro de produtos para começar.</p>
+                </div>
+            </section>
+
+            <section class="section results-section">
+                <h2 class="section-title">📊 Resultados</h2>
+                <div class="results-panels">
+                    <div class="output-panel">
+                        <div class="output-actions">
+                            <button type="button" id="delete-project-btn" class="btn-delete" style="display:none;">Excluir Projeto</button>
+                        </div>
+                        <div class="output-content" id="output-content">
+                            <p>Visualize o estoque e os resultados aqui.</p>
+                        </div>
+                    </div>
+                    <div class="project-list-panel">
+                        <h3 class="project-list-title">Projetos Cadastrados</h3>
+                        <div id="project-list-content" class="project-list-content">
+                            <p class="empty-message">Nenhum projeto cadastrado ainda.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Gestor Inteligente - Tecnologia para Microempresas</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

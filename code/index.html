@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+================================
+📋 GUIA DO HTML - ESTRUTURA
+================================
+Este arquivo contém toda a estrutura visual da aplicação.
+Use Ctrl+F para procurar por: # SEÇÃO:
+
+SEÇÕES PRINCIPAIS:
+1. # CABEÇALHO - Logo e título da aplicação
+2. # GERENCIAR PRODUTOS - Tabela e botões de produtos
+3. # CADASTRO DE PRODUTOS - Formulário para adicionar/editar produtos
+4. # ASSISTENTE DE VENDAS - Formulário para dicas de IA
+5. # ORÇAMENTO - Formulário para gerar orçamentos
+6. # RESULTADOS - Painel de saída
+
+COMO EDITAR:
+- Cada seção está marcada com # NOME DA SEÇÃO
+- IDs importantes: product-form, budget-form, output-content
+- Classes CSS: .section, .form-group, .btn-primary, .btn-secondary
+- Se mudar um ID aqui, mude também em script.js!
+================================
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor Inteligente - Microempresa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <strong>Menu de Navegação</strong>
+            <span>Acesse qualquer área sem voltar para o início.</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="sidebar-link active">Início</a>
+            <a href="products.html" class="sidebar-link">Cadastrar Produtos</a>
+            <a href="budget.html" class="sidebar-link">Orçamento</a>
+            <a href="stock.html" class="sidebar-link">Estoque</a>
+            <a href="ai.html" class="sidebar-link">Assistente IA</a>
+        </nav>
+    </aside>
+
+    <div data-page="home" class="container">
+        <!-- # 1. CABEÇALHO -->
+        <header class="header">
+            <h1 class="title">Gestor Inteligente</h1>
+            <p class="subtitle">Controle de estoque, orçamento e vendas para microempresas</p>
+        </header>
+
+        <main class="main-content">
+            <!-- # 1. TELA INICIAL -->
+            <section class="section screen-view" id="screen-home">
+                <h2 class="section-title">🏠 Tela Inicial</h2>
+                <p class="section-description">Escolha a área que deseja acessar. Cada tela tem seu resultado próprio e o histórico de projetos fica disponível abaixo.</p>
+                <div class="screen-home-cards">
+                    <a href="products.html" class="screen-card btn-primary">
+                        <strong>Cadastrar Produtos</strong>
+                        <span>Adicione novos itens ao seu estoque.</span>
+                    </a>
+                    <a href="budget.html" class="screen-card btn-primary">
+                        <strong>Orçamento</strong>
+                        <span>Monte um orçamento rápido com os produtos cadastrados.</span>
+                    </a>
+                    <a href="stock.html" class="screen-card btn-primary">
+                        <strong>Estoque</strong>
+                        <span>Gerencie estoque, edite e ajuste quantidades.</span>
+                    </a>
+                    <a href="ai.html" class="screen-card btn-primary">
+                        <strong>Assistente IA</strong>
+                        <span>Receba sugestões de vendas inteligentes.</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <section class="section results-section">
+            <h2 class="section-title">📊 Resultados</h2>
+            <div class="results-panels">
+                <div class="output-panel">
+                    <div class="output-actions">
+                        <button type="button" id="delete-project-btn" class="btn-delete" style="display:none;">Excluir Projeto</button>
+                    </div>
+                    <div class="output-content" id="output-content">
+                        <p>Bem-vindo ao Gestor Inteligente! Use os botões acima para usar o sistema.</p>
+                    </div>
+                </div>
+                <div class="project-list-panel">
+                    <h3 class="project-list-title">Projetos Cadastrados</h3>
+                    <div id="project-list-content" class="project-list-content">
+                        <p class="empty-message">Nenhum projeto cadastrado ainda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p>&copy; 2026 Gestor Inteligente - Tecnologia para Microempresas</p>
+        </footer>
+    </div>
+
+    <!-- Script JavaScript - Lógica da aplicação -->
+    <!-- VER: script.js para entender toda a lógica de interação -->
+    <script src="script.js"></script>
+</body>
+</html>
