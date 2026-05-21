@@ -37,4 +37,9 @@ Interface web moderna para o sistema de gestão de estoque, orçamento e vendas 
 - CSS3 com Grid e Flexbox
 - Design responsivo
 - Fontes Google (Inter)
+<<<<<<< HEAD
 - Tema dark mode
+=======
+- Tema dark mode
+([acesse nosso site aqui](http://127.0.0.1:5500/code/index.html))
+>>>>>>> 6adc4f6f1f1c938744649b98aa91873c876e9a7a
