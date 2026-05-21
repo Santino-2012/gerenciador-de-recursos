@@ -1,10 +1,17 @@
 <!--
-1º abrir o git
-2º escolha o repositorio
-3º abrir o vs code
-4º abra o terminal do vs code e digite: git init
-6º no github, copie a URL do repositório.
-7º vá para o terminal e digite: git remote add origin URL_DO_REPOSITORIO
-8º digite: git add .
-git commit -m "nome do commit"
-git push -u origin
+1º ir no terminal e digitar: git pull
+2º digite: git add .
+3º git commit -m "commit (número da versão)"
+4º git push
+    para o brunão-resenha:
+    1º abri o terminal
+    2º digite git clone https://github.com/Santino-2012/gerenciador-de-recursos.git
+    3º abrir o projeto
+    4º editar o que precisa
+    5º antes de coeçar SEMPRE digitar (no terminal): git pull
+    6º digitar: git add
+    7ºgit commit -m "commit (número da versão)"
+    8º git push
+EU (Miguel) devo escrever git pull quando ele enviar as mudanças!
+    NOIS DOIS:
+    sempre devemos colocar git pull.
